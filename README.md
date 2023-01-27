@@ -31,7 +31,7 @@ To evaluate the pretrained neural network CBF and controller, run:
 ```bash
 python evaluate.py --num_agents 32 --model_path models/model_save --vis 1
 ```
-`--num_agents` specifies the number of agents in the environment. `--model_path` points to the prefix of the pretrained neural network weights. The visualization is disabled by default and will be enabled when `--vis` is set to 1.
+`--num_agents` specifies the number of agents in the environment. `--model_path` points to the prefix of the pretrained neural network weights. The visualization is disabled by default and will be enabled when `--vis` is set to 1. `--noise` specifies the standard deviation of Gaussian noise applied to the state readings for computing control actions. `--dropout` specifies the dropout rate of state readings of k nearest neighbours for each agent.
 
 To train the neural network CBF and controller from scratch, run:
 ```bash
